@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+:root {
+    --cinza: #C4C4C4;
+    --preto: black;
+    --inter: 'Inter', sans-serif;
+    --azul: #aac8ff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+li.closed {
+    list-style: disc;
+}
+
+.closed {
+    margin-top: 5px;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 1%;
+}
+
+header {
+    width: 100%;
+    background-color: var(--azul);
+    padding: 20px;
+
+}
+
+.header__menu__links {
+    display: flex;
+    justify-content: center;
+
+}
+
+.header__menu__links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: var(--preto);
+    transition: color 0.2s;
+    font-family: var(--inter);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.header__menu__links a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.header__conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10%;
+    width: 800px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 1px;
+}
+
+h1 {
+    font-family: var(--inter);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.top__h2 {
+    margin-top: 3%;
+    font-family: var(--inter);
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: black;
+}
+
+.conteiner_conteudo {
+    display: flex;
+    gap: 350px;
+    padding: 30px;
+    justify-content: center;
+    background-color: var(--azul);
+
+}
+
+.conteiner_conteudo_dados {
+    margin-top: 20%
+}
+
+.conteiner_conteudo_dados p {
+    font-size: 1.05rem;
+    padding: 3px;
+}
+
+.conteudo__foto__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto__perfil {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+
+}
+
+.conteudo__foto__icones {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+
+}
+
+#github {
+    width: 40px;
+    height: 40px;
+}
+
+#link {
+    width: 40px;
+    height: 40px;
+}
+
+/* Sobre mim */
+.center_sobremim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 980px;
+}
+
+.center_sobremim p {
+    text-align: justify;
+}
+
+.foto_pc {
+    width: 200px;
+    height: auto;
+    padding: 0px 20px;
+}
+
+
+/* Educação */
+
+#educacao {
+    width: 980px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#educacao_sesao {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 150px;
+    width: 980px;
+}
+
+.edu_academica {
+    background-color: var(--azul);
+    font-size: 1rem;
+    font-family: var(--inter);
+    font-weight: 400;
+    border-radius: 10px;
+    height: 90px;
+    width: 380px;
+    padding: 1% 3%;
+    text-align: justify;
+
+}
+
+/* Experiencia Prof */
+
+#experiencias {
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.experiencias__conteudos {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 150px;
+}
+
+.experiencias__conteiner {
+    background-color: var(--azul);
+    font-size: 1rem;
+    font-family: var(--inter);
+    font-weight: 400;
+    border-radius: 10px;
+    height: 90px;
+    width: 380px;
+    padding: 1% 3%;
+    text-align: justify;
+
+}
+
+#habilidades {
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: 800px;
+    margin-top: 10px;
+
+
+}
+
+.habilidades_img {
+    width: 50px;
+    height: 70px;
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+/* interesses*/
+#interesses {
+    width: 800px;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.interesses_texto {
+    margin-top: 10px;
+    height: 300px;
+    font-size: 1.2rem;
+}
+
+/* rodape */
+
+footer {
+    background: var(--azul);
+    margin-top: 30px;
+}
+
+.footer_texto {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#footer_texto_contato {
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+#footer_texto_nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+/* Responsividade em desenvolvimento*/
+
+
